@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Axios To Dos</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rokkitt" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- <header>
+            <h1>⋆ ⋆ ⋆ ⋆ ⋆ To-Do Tracker ⋆ ⋆ ⋆ ⋆ ⋆</h1>
+        </header> -->
+
+        <main>
+            <section class="add-task">
+                <form class="task-adder" name="taskAdder">
+                    <p>What do you need to get done?</p>
+                    <input required class="add-task-title" name="addTaskTitle">
+                    <p>What kind of task is it?</p>
+                    <select class="add-task-img" name="addTaskImg">
+                        <option for="task-type" name="task-type" value="task-type"> </option>
+                        <option for="cleaning" name="cleaning" value="cleaning">cleaning</option>
+                        <option for="laundry" name="laundry" value="laundry">laundry</option>
+                        <option for="errands" name="errands" value="errands">errands</option>
+                        <option for="bills" name="bills" value="bills">bills</option>
+                        <option for="business" name="business" value="business">business</option>
+                        <option for="cook" name="cook" value="cook">cook</option>
+                        <option for="brainstorm" name="brainstorm" value="brainstorm">brainstorm</option>
+                        <option for="onlineGaming" name="onlineGaming" value="onlineGaming">online gaming</option>
+                        <option for="create" name="create" value="create">create</option>
+                        <option for="repair" name="repair" value="repair">repair</option>
+                        <option for="plan" name="plan" value="plan">plan</option>
+                        <option for="design" name="design" value="design">design</option>
+                        <option for="write" name="write" value="write">write</option>
+                        <option for="consoleGaming" name="consoleGaming" value="consoleGaming">console gaming</option>
+                        <option for="dnd" name="dnd" value="dnd">DnD</option>
+                        <option for="carMaintence" name="carMaintence" value="carMaintence">car maintence</option>
+                        <option for="worldDominiation" name="worldDominiation" value="worldDominiation">world dominiation</option>
+                        <option for="networking" name="networking" value="networking"></option> 
+                    </select>
+                    <p>How much of a priority is this task?</p>
+                    <select class="add-task-priority" name="addTaskPriority">
+                        <option for="veryLow" name="veryLow" value="veryLow">very low</option>
+                        <option for="low" name="low" value="low">low</option>
+                        <option for="moderate" name="moderate" value="moderate">moderate</option>
+                        <option for="high" name="high" value="high">high</option>
+                        <option for="veryHigh" name="veryHigh" value="veryHigh">very high</option>                   
+                    </select>
+                    <p>What do you need to remember about this task?</p>
+                    <textarea class="add-task-description" name="addTaskDescription"></textarea>
+                    <button class="add-task-button" name="addTaskButton" id="addTaskButton">add task</button>
+                </form>
+            </section>
+            <section class="pending-tasks" id="pendingTasks">
+    
+            </section>
+            <section class="completed-tasks" id="completedTasks">
+
+            </section>
+        </main>
+
+        <footer>
+            <div class="progress">
+                <p class="text">PROGRESS</p>
+            </div>
+            <div class="progress-meter" id="progressMeter">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

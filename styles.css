@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body  {
+    background-color: rgb(77, 70, 93);
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+header {
+    background-color: rgb(20, 15, 34);
+    color: white;
+    width: 100%;
+    height: 3em;
+    position: sticky;
+    top: 0;
+    font-size: 1em;
+    text-align: center;
+    z-index: 99;
+}
+main {
+    padding: 20px;
+}
+.add-task {
+    max-width: 900px;
+    background-color: rgba(32, 32, 37, 0.705);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.609) 5px 5px 5px;
+}
+
+    .task-adder {
+        background-color: rgba(26, 26, 42, 0.705);
+        font-size: 1.15em;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: rgba(79, 78, 80, 0.383) -3px -3px 3px;
+    }
+    
+    .task-adder input {
+        font-size: .9em;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .task-adder select {
+        font-size: .9em;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .task-adder textarea {
+        font-size: .9em;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .task-adder p {
+        margin: 15px;
+    }
+
+    .add-task-title {
+        width: 90%;
+        height: 2em;
+    }
+
+    .add-task-img {
+        width: 50%;
+        height: 2.25em;
+    }
+
+    .add-task-priority {
+        width: 50%;
+        height: 2.25em;
+    }
+
+    .add-task-description {
+        width: 90%;
+        height: 6em;
+    }
+
+    .add-task-button {
+        background-color: rgba(8, 8, 26, 0.842);
+        color: white;
+        width: 60%;
+        font-size: 1em;
+        font-variant: small-caps;
+        padding: 3px 3px 6px 3px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.609) 5px 5px 5px;
+    }
+
+.task-wrapper {
+    background-color: rgba(230, 230, 246, 0.363);
+    color: rgba(0, 0, 0, 0.924);
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: rgba(255, 255, 255, 0.329) solid 2px;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.609) -1px 5px 5px
+}
+
+    .img-box {
+        grid-column: 1;
+        filter: opacity(85%);
+        width: 115px;
+        height: auto;
+        border-radius: 10px 0px 0px 10px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-wrapper {
+        grid-column: 2;
+        display: inline-grid;
+        grid-template-rows: auto auto 2em;
+        padding: 10px 15px 3px 0px;
+    }
+
+        .task-title {
+            grid-row: 1;
+            font-size: 1.25em;
+        }
+
+        .describe-task {
+            grid-row: 2;
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        .priority-stars {
+            grid-row: 3;
+            color: rgba(0, 0, 0, 0.897);
+            width: 100%;
+            height: 50px;
+            font-size: 1.6em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5px;
+            text-shadow: rgba(0, 0, 0, 0.548) 3px 3px 3px;
+        }
+
+            .bright-star  {
+                margin: 0px 25px 0px 25px;
+            }
+
+            .dead-star  {
+                margin: 0px 25px 0px 25px;
+            }
+
+    .button-wrapper {
+        width: 163px;
+        min-width: 163px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        margin: 7px;
+    }
+
+        .button-wrapper button {
+            background-color: rgba(43, 43, 73, 0.842);
+            color: rgba(255, 255, 255, 0.753);
+            width: 99%;
+            height: 97%;
+            font-size: .85em;
+            font-variant: small-caps;
+            text-shadow:  rgba(0, 0, 0, 0.609) -3px -3px -3px;
+            padding: 3px 3px 6px 3px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.609) -1px 5px 5px;
+        }
+
+        .button-wrapper button:hover {
+            background-color: rgba(36, 36, 63, 0.842);
+        }
+
+        .complete-button {
+            grid-row: 1;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .pend-button {
+            grid-row: 1;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .edit-button {
+            grid-row: 2;
+        }
+
+        .delete-button {
+            grid-row: 3;
+            background-color:  rgba(43, 43, 73, 0.842);
+            border-radius: 0px 0px 10px 10px;
+        }   
+
+.pending-tasks {
+    max-width: 900px;
+    background-color: rgba(32, 32, 37, 0.705);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.609) -1px 5px 5px
+}
+    .pending-tasks > .task-wrapper:nth-child(1) {
+        margin: 0px;
+    }
+
+.completed-tasks {
+    max-width: 900px;
+    background-color: rgba(32, 32, 37, 0.705);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.609) -1px 5px 5px
+}
+    .completed-tasks > .task-wrapper:nth-child(1) {
+        margin: 0px;
+    }
+
+footer {
+    background-color: rgb(20, 15, 34);
+    color: white;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    box-shadow: rgba(129, 129, 133, 0.322) -2px -2px 2px
+}
+    footer p {
+        font-size: 1.5em;
+    }
+
+    .progress {
+        margin-right: 20px;
+    }
+
+    .progress-meter {
+        border: white solid 3px;
+        padding: 3px;
+    }
+
+    .progress-bar {
+        background-color: white;
+        width: 1%;
+        height: 100%;
+    } 
+/* TODO 
+add a collaspe hover to show just the button when not in use
+don't forget to deactivate the button itself when collapsed */
